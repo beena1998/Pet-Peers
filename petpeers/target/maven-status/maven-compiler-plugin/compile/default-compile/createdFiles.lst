@@ -6,7 +6,6 @@ com\validator\LoginValidator.class
 com\model\Pet.class
 com\validator\UserValidator.class
 com\service\SecurityService.class
-com\config\AppContext.class
 com\validator\PetValidator.class
 com\dao\UserDao.class
 com\model\User.class

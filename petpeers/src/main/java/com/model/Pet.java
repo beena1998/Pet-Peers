@@ -9,23 +9,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
 @Entity
-@Table(name="pets")
-public class Pet implements Serializable{
+@Table(name = "pets")
+public class Pet implements Serializable {
 	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID")
 	private long id;
-	
-	@Column(name="PET_NAME")
+
+	@Column(name = "PET_NAME")
 	private String name;
-	
-	@Column(name="PET_AGE")
+
+	@Column(name = "PET_AGE")
 	private int age;
-	
-	@Column(name="PET_PLACE")
+
+	@Column(name = "PET_PLACE")
 	private String place;
-	
+
 	@ManyToOne
 	private User user;
 

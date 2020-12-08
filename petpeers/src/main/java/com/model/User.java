@@ -13,23 +13,28 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 @Entity
-@Table(name="pet_user")
+@Table(name = "pet_user")
 public class User implements Serializable {
 	@Id
-	@Column(name="ID")
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	@Column(name = "ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long userid;
-	
-	@Column(name="USER_NAME")
+    @NotEmpty
+	@Column(name = "USER_NAME")
 	private String username;
-	
-	@Column(name="USER_PASSWD")
+    @NotEmpty
+	@Column(name = "USER_PASSWD")
 	private String userPassword;
-	
+
+	@NotEmpty
 	private String confirmPassword;
-	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="ID")
+	
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "ID")
 	private Set<Pet> pets;
 
 	public User() {
