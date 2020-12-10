@@ -18,7 +18,7 @@
 		<tld.version>1.1.2</tld.version>
 		<servlets.version>3.1.0</servlets.version>
 		<jsp.version>2.3.1</jsp.version>
-		<log4j-core.version>2.6.2</log4j-core.version>
+	<!-- 	<log4j-core.version>2.6.2</log4j-core.version> -->
 		<org.slf4j-version>1.7.5</org.slf4j-version>
 		<junit-jupiter-engine-version>5.3.1</junit-jupiter-engine-version>
 		<junit-vintage-engine-version>5.2.0</junit-vintage-engine-version>
@@ -91,11 +91,11 @@
 			<scope>provided</scope>
 		</dependency>
 		<!-- log4j Dependency -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>${log4j-core.version}</version>
-		</dependency>
+		</dependency> -->
 
 		<!-- Logging -->
 		<dependency>

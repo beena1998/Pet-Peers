@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+After login confirmation!! ${user.username}
+<a href="home">HOME</a><br>
+<a href="login">LOGIN</a><br>
+<a href="./pet">Add pet</a>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <body>
 Inside Login!!!
 	<div align="center">
-		<form:form action="loginSuccess" method="post" modelAttribute="user">
+		<form:form action="loginSuccess" method="post" modelAttribute="user" >
 			<table border="0">
 				<tr>
 					<td colspan="2" align="center"><h2>Login</h2></td>
